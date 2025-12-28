@@ -441,10 +441,12 @@ class FlappySparrow extends JPanel implements ActionListener, KeyListener {
         
         // Check for game over and trigger audio/animation
         if (gameOver && !gameOverAudioPlayed) {
-            // DO NOT stop background music on game over
-            // Let it continue playing
+            // Stop background music
+            if (audioInitialized && backgroundMusic.isRunning()) {
+                backgroundMusic.stop();
+            }
             
-            // Play game over sound on top of background music
+            // Play game over sound
             if (audioInitialized) {
                 try {
                     gameOverSound.setFramePosition(0); // Rewind to start
@@ -500,7 +502,12 @@ class FlappySparrow extends JPanel implements ActionListener, KeyListener {
         // Restart background music from beginning
         if (audioInitialized) {
             try {
-                backgroundMusic.stop();
+                // Make sure game over sound is stopped
+                if (gameOverSound.isRunning()) {
+                    gameOverSound.stop();
+                }
+                
+                // Restart background music
                 backgroundMusic.setFramePosition(0);
                 backgroundMusic.loop(Clip.LOOP_CONTINUOUSLY);
                 backgroundMusic.start();
