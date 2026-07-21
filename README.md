@@ -5,7 +5,7 @@ This project was created as a learning exercise to practice Java GUI programming
 
 ---
 
-## 🎮 Gameplay
+## Gameplay
 
 * Press **SPACE** to make the sparrow flap
 * Avoid the pipes
@@ -15,7 +15,7 @@ This project was created as a learning exercise to practice Java GUI programming
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * Java (Core Java)
 * Java Swing (GUI)
@@ -24,7 +24,7 @@ This project was created as a learning exercise to practice Java GUI programming
 
 ---
 
-## 📂 Project Structure
+## Project Structure
 
 ```
 Flappy_Sparrow/
@@ -46,7 +46,7 @@ Flappy_Sparrow/
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 Make sure you are in the project root directory.
 
@@ -65,7 +65,7 @@ java -cp bin App
 
 ---
 
-## 🎯 Purpose of the Project
+## Purpose of the Project
 
 This project was built for **learning purposes only**.
 
