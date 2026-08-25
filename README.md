@@ -19,7 +19,7 @@ This project was created as a learning exercise to practice Java GUI programming
 * Java Sound API
 ---
 ## Project Structure
-
+```text
 Flappy_Sparrow/<br>
 ├── graphics/<br>
 │ ├── flappysparrowbg.png<br>
@@ -35,18 +35,19 @@ Flappy_Sparrow/<br>
 │ └── App.java<br>
 ├── bin/<br>
 └── run.txt<br>
-
+```
 ---
 ## How to Run
 Make sure you are in the project root directory.
 Using the provided script:
-
-<code>bash run.txt</code>
-
+```text
+bash run.txt
+```
 Or manually:
-
-<code>javac -d bin src/App.java</code><br>
-<code>java -cp bin App</code>
+```text
+javac -d bin src/App.java
+java -cp bin App
+```
 
 ---
 ## Purpose of the Project
